@@ -1,0 +1,1 @@
+Import-Csv "C:\Users\admin\Desktop\123.csv " | %{New-Mailbox -Name $_.Name -Alias $_.id -UserPrincipalName $_.id2 -SamAccountName $_.id -FirstName $_.FirstName -LastName $_.LastName -PrimarySmtpAddress $_.email -ResetPasswordOnNextLogon 0 -Database SG3DB27 -DisplayName $_.name -Password (ConvertTo-SecureString -String abcd@1234 -AsPlainText -Force)}
