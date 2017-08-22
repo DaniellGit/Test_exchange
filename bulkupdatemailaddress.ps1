@@ -1,4 +1,5 @@
 <#
+modified by paul 
 .SYNOPSIS
 Add-SMTPAddresses.ps1 - Add SMTP addresses to Office 365 users for a new domain name
 
